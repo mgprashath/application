@@ -1,0 +1,19 @@
+Here are presentation notes for your slide titled “Why Classic ASP is a Legacy/Deprecated System”:
+
+⸻
+
+Slide Notes:
+	•	This slide explains why Classic ASP is now considered a deprecated technology.
+	•	First, Classic ASP was released in 1996 and was replaced by ASP.NET in 2002, which is Microsoft’s modern web framework.
+	•	Microsoft no longer actively develops or improves Classic ASP, meaning no new features or enhancements are coming.
+	•	It has known security limitations—it lacks support for modern secure coding practices and headers.
+	•	It does not scale well for modern, component-based architectures, which are needed for today’s applications.
+	•	The development experience is outdated too:
+	•	Minimal IDE support—no IntelliSense, auto-completion, or modern debugging tools.
+	•	There’s a lack of community support—fewer developers, packages, or modern documentation.
+	•	Classic ASP also has no cross-platform support. It’s tightly tied to Windows and IIS.
+	•	Finally, security risks increase over time due to the lack of updates and modern patching.
+
+⸻
+
+Ready for notes on your next slide whenever you are!
