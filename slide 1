@@ -1,0 +1,20 @@
+Here are presentation notes for your slide titled “Existing System Overview (Classic ASP)”:
+
+⸻
+
+Slide Notes:
+	•	This slide gives an overview of our current system architecture.
+	•	We are using Classic ASP, which is a legacy server-side scripting technology developed by Microsoft.
+	•	The scripting is done using VBScript or JScript, and everything runs inside .asp files.
+	•	HTML and logic are tightly coupled, meaning there is limited separation of concerns, which makes the codebase harder to manage.
+	•	The application is hosted on IIS (Internet Information Services).
+	•	One major limitation is the lack of support for modern development practices like:
+	•	MVC architecture, which separates business logic, UI, and data.
+	•	Dependency Injection, which allows better code reusability and testing.
+	•	Security headers, which are crucial for modern web app protection.
+	•	Also, since ASP scripts are interpreted and not compiled, the system performs slower compared to newer technologies.
+	•	Overall, it’s becoming difficult to maintain and not scalable for current web development standards.
+
+⸻
+
+Let me know when you’re ready for the next slide!
