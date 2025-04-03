@@ -1,0 +1,14 @@
+Here’s a speaker note for this slide to help you explain it clearly to both technical and non-technical audiences:
+
+⸻
+
+Speaker Notes – Microsoft Web Technology Evolution and Support Table
+	•	This table shows the evolution of Microsoft web technologies and their current support status.
+	•	Classic ASP, which our current system is built on, was released in 1996. It’s now deprecated with no official support roadmap. Microsoft only keeps it for backward compatibility in IIS.
+	•	ASP.NET Web Forms and ASP.NET MVC were later additions but are also considered legacy or maintenance-only, with support for .NET Framework 4.8 ending in 2029.
+	•	The only fully supported and actively developed technology today is ASP.NET Core, introduced in 2016. It supports cross-platform development, modern architecture, and high security.
+	•	At the bottom, we’ve highlighted that our current platform lacks support for modern development, security, and performance standards.
+	•	Because of this, migration to ASP.NET Core is highly recommended as the long-term solution.
+	•	In the meantime, we are addressing the most critical vulnerabilities in the current system as a short-term fix.
+
+Would you like speaker notes for the next slide too?
