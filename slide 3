@@ -1,0 +1,16 @@
+Here are presentation notes for your “Requirement” slide:
+
+⸻
+
+Slide Notes:
+	•	This slide explains why we are taking immediate action.
+	•	A recent penetration test exposed several critical security vulnerabilities in our legacy Classic ASP system.
+	•	These include: missing HTTP security headers, inline script usage, and sensitive data passed in GET requests, all of which increase risk.
+	•	While migrating to a modern framework like ASP.NET Core or other technologies would be ideal, it’s not currently practical due to budget, time, or integration dependencies.
+	•	So the short-term requirement is clear:
+	•	We need to fix the vulnerabilities in the existing Classic ASP application to reduce risk and stay compliant.
+	•	At the same time, we’ll plan for a future system upgrade when feasible.
+
+⸻
+
+Let me know if you want speaker notes for the next slide!
