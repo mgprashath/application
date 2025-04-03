@@ -1,0 +1,47 @@
+Great! Here’s a clear, concise explanation for each of the seven vulnerabilities you mentioned—suitable for both technical and non-technical audiences. You can use these in your presentation slides or speaker notes:
+
+⸻
+
+1. Sensitive Information Sent via GET Request
+	•	Explanation: Data such as vehicle details is sent in the URL, which can be stored in browser history, logs, or shared accidentally. This increases the risk of unauthorized access.
+	•	Recommendation: Use POST requests instead of GET to transmit sensitive data securely in the request body.
+
+⸻
+
+2. Cookie Without HttpOnly Flag Set
+	•	Explanation: Cookies without the HttpOnly flag can be accessed by JavaScript, making them vulnerable to theft via cross-site scripting (XSS).
+	•	Recommendation: Set the HttpOnly attribute on cookies to prevent client-side access and reduce the risk of session hijacking.
+
+⸻
+
+3. Information Disclosure Through HTTP Headers
+	•	Explanation: HTTP response headers reveal technical details like server version or technologies used (e.g., “X-Powered-By”), which attackers can exploit.
+	•	Recommendation: Remove or mask such headers (e.g., replace with a generic name or custom header using IIS or reverse proxy).
+
+⸻
+
+4. Missing Application Security Headers
+	•	Explanation: Lack of essential security headers makes the application more vulnerable to common attacks like clickjacking, XSS, and content sniffing.
+	•	Recommendation: Add headers such as X-Frame-Options, Strict-Transport-Security, Content-Security-Policy, and X-Content-Type-Options.
+
+⸻
+
+5. IIS Short Name Enumeration
+	•	Explanation: The web server may reveal partial file or folder names (e.g., “~1”) through specific URL patterns, which can be used to guess and access sensitive files.
+	•	Recommendation: Disable 8.3 filename support on IIS and implement a web application firewall (WAF) rule to block such requests.
+
+⸻
+
+6. Outdated and Deprecated Software Detected
+	•	Explanation: The system is built on Classic ASP, which is no longer actively supported. Running on outdated technology increases the risk of unpatched security flaws.
+	•	Recommendation: While planning migration, harden the current environment by applying patches and limiting attack surfaces.
+
+⸻
+
+7. Missing DNS Security Records
+	•	Explanation: The domain lacks DNS Certification Authority Authorization (CAA) records, which specify which Certificate Authorities (CAs) are permitted to issue certificates.
+	•	Recommendation: Add CAA records to restrict certificate issuance and help prevent fraudulent SSL/TLS certificates.
+
+⸻
+
+Would you like these formatted for slide speaker notes too?
