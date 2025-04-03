@@ -1,0 +1,48 @@
+Here’s a clear and professional explanation you can use during your presentation to describe each of the 7 reported vulnerabilities for both technical and non-technical audiences:
+
+⸻
+
+Speaker Notes – Reported Vulnerabilities (Slide)
+
+1. Sensitive Information Sent via GET Request (Medium)
+	•	This was the most critical issue found.
+	•	Sensitive data (like registration numbers or object IDs) was being sent in the URL via GET requests.
+	•	URLs can be cached in browser history, logged in servers, and shared unintentionally, leading to information leaks.
+	•	Best practice: Use POST method instead to send such information securely in the message body.
+
+2. Cookie Without HttpOnly Flag Set (Low)
+	•	Some cookies can be accessed through client-side JavaScript.
+	•	This opens the door to cross-site scripting (XSS) attacks, where attackers can steal session cookies.
+	•	The HttpOnly flag tells the browser not to expose cookies to JavaScript, protecting them from theft.
+
+3. Information Disclosure Through HTTP Headers (Low)
+	•	The application is revealing internal technology details in HTTP response headers (like server type, version, etc.).
+	•	Attackers can use this information to exploit known vulnerabilities for those technologies.
+	•	Solution: Remove or override these headers to reduce exposure.
+
+4. Missing Application Security Headers (Low)
+	•	Several recommended HTTP security headers were missing:
+	•	X-Frame-Options: Prevents clickjacking.
+	•	Strict-Transport-Security: Enforces HTTPS.
+	•	Content-Security-Policy: Protects against XSS and code injection.
+	•	Adding these headers significantly improves browser-based security.
+
+5. IIS Short Name Enumeration (Low)
+	•	The web server is exposing internal short file names (8.3 format), a legacy Windows feature.
+	•	Attackers can use this to guess files or directories that exist on the server.
+	•	Mitigation involves disabling this feature at the IIS configuration level.
+
+6. Outdated and Deprecated Software Detected (Low)
+	•	The application is built on Classic ASP, which is no longer actively developed or supported.
+	•	Using outdated software increases security risks and limits future maintainability.
+	•	We are remediating existing issues but recommending migration to a modern platform.
+
+7. Missing DNS Security Records (Low – Infrastructure)
+	•	DNS records are missing security configurations like CAA records.
+	•	These help specify which certificate authorities can issue SSL certificates for the domain.
+	•	Without them, attackers may attempt unauthorized certificate issuance (though rare).
+	•	Adding DNS security records improves domain-level trust and prevents abuse.
+
+⸻
+
+Would you like a summarized table version as well for the printed handout or to include in notes?
