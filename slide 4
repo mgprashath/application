@@ -1,0 +1,21 @@
+Here are presentation notes to explain the “Reported Vulnerabilities” slide clearly to both technical and non-technical staff:
+
+⸻
+
+Slide Notes – Reported Vulnerabilities
+	•	This slide gives an overview of the security issues identified during the latest penetration test.
+	•	A total of 7 vulnerabilities were found in the system.
+	•	1 Medium severity issue: This is the most urgent item – it involves sensitive information being exposed via GET requests, which could be exploited to steal data.
+	•	6 Low severity issues: These are less urgent but still important to fix, as they could be combined by attackers or exploited in specific scenarios.
+	•	Examples of issues:
+	•	Missing HTTP security headers like Content-Security-Policy or Strict-Transport-Security.
+	•	Old IIS server behavior exposing short names of files or directories.
+	•	Outdated software and missing DNS protections.
+	•	It’s important to note:
+	•	No critical or high-risk vulnerabilities were found – which is good.
+	•	However, even low-level issues can lead to breaches over time if ignored.
+	•	These findings form the foundation for our immediate security improvements.
+
+⸻
+
+Would you like similar notes for the individual vulnerabilities too?
